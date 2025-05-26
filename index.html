@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+</head>
+<body>
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <img src="43cd3fdf-9a62-4d9e-a178-8c63210d04c0-removebg-preview.png" alt="img" class="logo1">
+            </div>
+            <div class="navlinks">
+                <ul id="menulist">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#Rooms">Rooms</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                 
+                    <li><button class="primary-btn">Book Now</button></li>
+                </ul>
+                
+            </div>
+        </div>
+    </header>
+    <!--hero section-->
+     <section class="hero" id="Home">
+    <div class="hero-content">
+      <h1>Spend Your <span>Holiday</span></h1>
+      <p>Feel the Warmth of Home, with the Touch of Elegance</p>
+      <div class="buttons">
+        <a href="#" class="btn green">Read More</a>
+        <a href="#" class="btn outline">Contact Us</a>
+      </div>
+    </div>
+  </section>
+<!--booking banner section-->
+<section class="booking-banner">
+  <div class="booking-container">
+    <h3><span>Book</span> Your Rooms</h3>
+    <form class="booking-form">
+      <input type="date" placeholder="Check-in">
+      <input type="date" placeholder="Check-out">
+      <input type="number" placeholder="Adults">
+      <input type="number" placeholder="Children">
+      <button type="submit">Check Availability</button>
+    </form>
+  </div>
+</section>
+
+<section class="about" id="About">
+  <div class="about-content">
+    <div class="text">
+      <h2><span class="faded">WELCOME</span><br> Novastay</h2>
+      <p>At Novastay, we don't just offer rooms - we create a space where you're always welcomed, remembered, and valued.</p>
+      <a href="#" class="btn-green">About Us</a>
+    </div>
+    <div class="image">
+      <img src="https://img.freepik.com/free-photo/beautiful-luxury-outdoor-swimming-pool-hotel-resort_74190-7433.jpg" alt="Hotel Interior">
+    </div>
+  </div>
+</section>
+
+<!-- Statistics Section -->
+<section class="stats-section">
+  <div class="stats">
+    <div class="stat-box">
+      <h2>2500</h2>
+      <p>Customer</p>
+    </div>
+    <div class="stat-box">
+      <h2>1250</h2>
+      <p>Happy Customer</p>
+    </div>
+    <div class="stat-box">
+      <h2>150</h2>
+      <p>Expert Technicians</p>
+    </div>
+    <div class="stat-box">
+      <h2>3550</h2>
+      <p>Desktop Repaired</p>
+    </div>
+  </div>
+</section>
+
+<!-- Our Rooms Section -->
+ <section class="section" id="Gallery">
+    <h2>Our Gallery</h2>
+
+    <div class="carousel-container">
+      <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+      <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-item">
+          <div class="carousel-img-wrapper">
+            <img src="https://media.istockphoto.com/id/119926339/photo/resort-swimming-pool.jpg?s=612x612&w=0&k=20&c=9QtwJC2boq3GFHaeDsKytF4-CavYKQuy1jBD2IRfYKc=" alt="Room 1">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-img-wrapper">
+            <img src="https://apimedia.tfehotels.com/media-green/optimized/b4/9f/b49f2299-e537-48a7-8b40-1d59799a7d92/vibe-hotel-melbourne-lobby-01-2020-1500w.jpg" alt="Room 2">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-img-wrapper">
+            <img src="https://apimedia.tfehotels.com/media-green/optimized/92/9b/929b7b7c-0ec4-49c9-83e5-1c1df11a1b48/Vibe-Hotel-Singapore-Orchard---ROOS-(Night)_high1500x1000-1500w.jpg" alt="Room 3">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-img-wrapper">
+            <img src="https://www.brightonsavoy.com.au/wp-content/uploads/2018/02/Commercial-Brighton-Savoy-042_resize-800-x-534.jpg" alt="Room 4">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-img-wrapper">
+            <img src="https://images.trvl-media.com/lodging/41000000/40110000/40101100/40101010/afc5a3e8.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Room 5">
+          </div>
+        </div>
+         <div class="carousel-item">
+          <div class="carousel-img-wrapper">
+            <img src="https://www.fivestaralliance.com/files/fsa/nodes/2014/23876/23876_3_thewestinhiltonheadislandresortandspa_fsa-g.jpg?dummy=1430885481" alt="Room 4">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!--room description-->
+  <section class="rooms-intro" id="Rooms">
+  <h2>Novastay</h2>
+  <p class="intro-tagline">A Glimpse of Comfort & Luxury</p>
+  <p class="intro-description">
+    Discover a curated selection of our finest rooms, designed for ultimate comfort and elegance. Whether you're here to unwind or work,
+    each space offers a serene atmosphere and modern amenities for a relaxing stay.
+  </p>
+</section>
+
+<!--room booking section-->
+<section class="room-section">
+  <h2 class="section-title">Our Rooms</h2>
+  <p class="section-subtitle">Comfortable, stylish rooms with all modern amenities for a peaceful stay.</p>
+  <div class="room-cards">
+    <!-- Room 1 -->
+    <div class="room-card">
+      <img src="https://img.freepik.com/free-photo/small-hotel-room-interior-with-double-bed-bathroom_1262-12489.jpg?semt=ais_hybrid&w=740" alt="Room 1" class="room-img">
+      <h3>Standard Room</h3>
+      <div class="stars">★★★★★</div>
+      <p>A cozy room with a queen bed, Wi-Fi, TV, AC, and private bathroom — ideal for solo or short stays.</p>
+      <div class="room-footer">
+        <button class="book-btn">BOOK NOW</button>
+        <div class="price"> ₹2,999 <span>Per Night</span></div>
+      </div>
+    </div>
+    <!-- Room 2 -->
+    <div class="room-card">
+      <img src="https://www.alba-hotel.com/img/rooms/hotel-alba-roomtypes-deluxe-2.jpg?v=6.06.24" alt="Room 2" class="room-img">
+      <h3>Deluxe Room</h3>
+      <div class="stars">★★★★★</div>
+      <p>Spacious room with a king bed, smart TV, work desk, and premium bath — great for couples trip.</p>
+      <div class="room-footer">
+        <button class="book-btn">BOOK NOW</button>
+        <div class="price">₹4,999  <span>Per Night</span></div>
+      </div>
+    </div>
+    <!-- Room 3 -->
+    <div class="room-card">
+      <img src="https://media.istockphoto.com/id/1452529483/photo/3d-render-of-luxury-hotel-room.jpg?s=612x612&w=0&k=20&c=TzxpiZWHSgMPAZ6lsRKVsG5McmfrQ-bxoPpC8cQLrbk=" alt="Room 3" class="room-img">
+      <h3>Suite Room</h3>
+      <div class="stars">★★★★★</div>
+      <p>Luxury suite with living area, balcony, minibar, and bathtub — perfect for families or long stays.</p>
+      <div class="room-footer">
+        <button class="book-btn">BOOK NOW</button>
+        <div class="price">₹7,999 <span>Per Night</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--services section-->
+<section class="services-section" id="Services">
+  <h2>Our Services</h2>
+  <p>Experience unmatched comfort, personalized care, and seamless luxury  tailored to your every need.</p>
+
+  <div class="services-container">
+    <div class="services-grid">
+      <div class="service-box">
+        <img src="Black_White_Minimalist_Food_Restaurant_Logo-removebg-preview.png" alt="Delious Food">
+        <h4>Delious Food</h4>
+      </div>
+      <div class="service-box">
+        <img src="Blue_and_Black_Simple_Illustrative_Cycling_Photographer_Website_Logo-removebg-preview.png" alt="Fitness">
+        <h4>Fitness</h4>
+      </div>
+      <div class="service-box">
+        <img src="Sogbu_Restaurant_Logo-removebg-preview.png" alt="Inhouse Restaurant">
+        <h4>Inhouse Restaurant</h4>
+      </div>
+      <div class="service-box">
+        <img src="Purple_and_Orange_Gradient_Beauty_Spa_Logo-removebg-preview.png" alt="Beauty Spa">
+        <h4>Beauty Spa</h4>
+      </div>
+    </div>
+    <div class="service-image">
+      <img src="https://media.istockphoto.com/id/1480383864/photo/group-of-university-college-tourist-walking-inside-the-hotel-with-suitcases-young-happy.jpg?s=612x612&w=0&k=20&c=Y3LsW2jJHVWvgR3OaARpYmPwWgYhx5FFmkgRz3GQPzw=" alt="Service Detail Image">
+    </div>
+  </div>
+</section>
+
+<!--review section-->
+<section class="testimonial-section">
+  <div class="swiper testimonial-slider">
+    <div class="swiper-pagination"></div>
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="testimonial-content">
+          <div class="quote-icon">“</div>
+          <p>
+            A perfect home away from home. Will definitely return!
+          </p>
+          <h4>Julia Robertson</h4>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="testimonial-content">
+          <div class="quote-icon">“</div>
+          <p>
+            Friendly staff and peaceful atmosphere made my trip memorable.
+          </p>
+          <h4>Michael Smith</h4>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="testimonial-content">
+          <div class="quote-icon">“</div>
+          <p>
+            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
+          </p>
+          <h4>Sarah Lee</h4>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--footer section-->
+<footer class="footer" id="Contact">
+  <div class="footer-container">
+    <!-- Column 1: Logo & About -->
+    <div class="footer-section">
+      <h2 class="logo">
+        <img src="43cd3fdf-9a62-4d9e-a178-8c63210d04c0-removebg-preview.png" alt="logo" class="logo-icon">
+       
+      </h2>
+      <p>
+        Stay. Relax. Return.</p>
+        <p>
+        Novastay | Crafted for the modern traveler.
+      </p>
+      <br>
+      <div class="socials">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      </div>
+    
+
+    <!-- Column 2: Links -->
+    <div class="footer-section links">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">Company History</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact -->
+    <div class="footer-section contact">
+      <h3>Contact Us</h3>
+      <p>We're here to help you 24/7. Reach out for bookings, inquiries, or special requesys.</p>
+      <p><i class="fas fa-map-marker-alt"></i> 1201 park street, Avenue, Dhanmondy, Dhaka.</p>
+      <p><i class="fas fa-phone"></i> +91 657 524 332</p>
+      <p><i class="fas fa-envelope"></i> info@novastay.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>@ 2025 Novastay. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
