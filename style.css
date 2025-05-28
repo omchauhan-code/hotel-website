@@ -848,6 +848,10 @@ header button{
   header ul {
     display: none; /* You may replace this with a hamburger menu for better UX */
   }
+  .navlinks ul {
+    gap: 15px;
+    font-size: 16px;
+  }
 }
 
 /* Mobile view: up to 767px */
@@ -907,4 +911,33 @@ header button{
   .image img {
     max-width: 90%;
   }
+  .navlinks ul {
+    display: none; /* hide nav on mobile by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;  /* adjust depending on your header height */
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 150px;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .navlinks ul.mobile-active {
+    display: flex; /* show menu when active */
+  }
+
+
+/* Hamburger icon styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .hamburger {
+    display: block;
+  }
+}
 }
