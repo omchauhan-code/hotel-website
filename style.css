@@ -106,6 +106,7 @@ header button{
 
 .hero-content {
   position: relative;
+  top: 150px;
   z-index: 2;
   max-width: 600px;
 }
@@ -700,3 +701,125 @@ header button{
   font-size: 13px;
 }
 
+
+/*block*/
+@keyframes appear{
+  from{
+     opacity: 0;
+     transform: translateY(200px);
+     
+  }
+  to{
+     opacity: 1;
+     transform: translateY(0px);
+  }
+}
+
+.block{
+  animation: appear linear;
+  animation-timeline: scroll();
+  animation-range: entry 0% cover 25%;
+}
+
+/*block1*/
+.block1{
+  animation: appear1 linear;
+  animation-timeline: scroll();
+  animation-range: entry 0% cover 5%;
+}
+@keyframes appear1{
+  from{
+     opacity: 0;
+     transform: translateY(40px);
+     
+  }
+  to{
+     opacity: 1;
+     transform: translateY(0px);
+  }
+}
+/*block2*/
+.block2{
+  animation: appear2 linear;
+  animation-timeline: scroll();
+  animation-range: entry 0% cover 32%;
+}
+@keyframes appear2{
+  from{
+     opacity: 0;
+     transform: translateY(170px);
+     
+  }
+  to{
+     opacity: 1;
+     transform: translateY(0px);
+  }
+}
+/*block3*/
+.block3{
+  animation: appear3 linear;
+  animation-timeline: scroll();
+  animation-range: entry 0% cover 40%;
+}
+@keyframes appear3{
+  from{
+     opacity: 0;
+     transform: translateY(300px);
+     
+  }
+  to{
+     opacity: 1;
+     transform: translateY(0px);
+  }
+}
+/*block4*/
+.block4{
+  animation: appear4 linear;
+  animation-timeline: scroll();
+  animation-range: entry 0% cover 65%;
+}
+@keyframes appear4{
+  from{
+     opacity: 0;
+     transform: translateY(500px);
+     
+  }
+  to{
+     opacity: 1;
+     transform: translateY(0px);
+  }
+}
+/*block5*/
+.block5{
+  animation: appear5 linear;
+  animation-timeline: scroll();
+  animation-range: entry 0% cover 80%;
+}
+@keyframes appear5{
+  from{
+     opacity: 0;
+     transform: translateY(500px);
+     
+  }
+  to{
+     opacity: 1;
+     transform: translateY(0px);
+  }
+}
+/*block6*/
+.block6{
+  animation: appear6 0.6s linear;
+  
+  animation-range: entry 0% cover 80%;
+}
+@keyframes appear6{
+  from{
+     opacity: 0;
+     transform: translateX(300px);
+     
+  }
+  to{
+     opacity: 1;
+     transform: translateX(0px);
+  }
+}
