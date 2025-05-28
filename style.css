@@ -823,3 +823,88 @@ header button{
      transform: translateX(0px);
   }
 }
+
+
+/*responsive*/
+/* Tablet view: 768px to 1024px */
+@media screen and (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .carousel-item {
+    flex: 0 0 50%; /* Show 2 items per row on tablet */
+  }
+
+  .services-grid {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-image {
+    display: none; /* Hide service image on smaller screens */
+  }
+
+  header ul {
+    display: none; /* You may replace this with a hamburger menu for better UX */
+  }
+}
+
+/* Mobile view: up to 767px */
+@media screen and (max-width: 767px) {
+  .hero {
+    padding-left: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    top: 100px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .booking-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%; /* Show 1 item per row on mobile */
+  }
+
+  .room-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-icon {
+    margin-right: 0;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image img {
+    max-width: 90%;
+  }
+}
